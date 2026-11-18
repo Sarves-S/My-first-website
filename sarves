@@ -1,0 +1,353 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SARVES S. | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #171714;
+            color: #f5f0e6;
+        }
+
+        /* HEADER */
+
+        header {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(15,15,15,0.65),
+                rgba(15,15,15,0.85)),
+                url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920")
+                center/cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid #ffffff30;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #c6a77b;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #c6a77b;
+        }
+
+        /* HOME */
+
+        .hero {
+            padding: 180px 10%;
+        }
+
+        .hero p {
+            color: #c6a77b;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 9vw, 105px);
+            letter-spacing: 5px;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            font-weight: 300;
+            margin-top: 15px;
+        }
+
+        .hero a {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 14px 30px;
+            background: #c6a77b;
+            color: #171714;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        /* COMMON SECTIONS */
+
+        section {
+            padding: 90px 10%;
+        }
+
+        .heading {
+            font-size: 36px;
+            color: #c6a77b;
+            margin-bottom: 35px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: #22221e;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        /* EDUCATION & HOBBIES */
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+            repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #292923;
+            padding: 30px;
+            border: 1px solid #51483b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #c6a77b;
+        }
+
+        .card h3 {
+            color: #c6a77b;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.8;
+        }
+
+        .hobbies {
+            background: #22221e;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #10100e;
+            color: #aaa;
+        }
+
+        /* MOBILE RESPONSIVE */
+
+        @media(max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 7px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding-top: 140px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME SECTION -->
+
+    <header id="home">
+
+        <nav>
+
+            <div class="logo">SARVES S.</div>
+
+            <div>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#hobbies">HOBBIES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+        </nav>
+
+        <div class="hero">
+
+            <p>WELCOME TO MY PORTFOLIO</p>
+
+            <h1>SARVES S.</h1>
+
+            <h2>
+                Electronics & Communication Engineering Student
+            </h2>
+
+            <a href="#about">EXPLORE MORE</a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+
+        <h2 class="heading">About Me</h2>
+
+        <p>
+            Hello! I'm Sarves S., an 18-year-old engineering
+            student from Tiruppur, Tamil Nadu.
+
+            Currently, I am pursuing my first year of
+            B.E. Electronics and Communication Engineering
+            at Sri Eshwar College of Engineering.
+
+            I am passionate about technology, travelling,
+            exploring new places and playing football.
+
+            I always enjoy learning new things and
+            experiencing new adventures.
+        </p>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+
+    <section id="education">
+
+        <h2 class="heading">Education</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Schooling</h3>
+
+                <p>Nava Bharath School</p>
+
+                <p>Completed School Education</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>College</h3>
+
+                <p>Sri Eshwar College of Engineering</p>
+
+                <p>B.E. Electronics and Communication Engineering</p>
+
+                <p>First Year</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOBBIES SECTION -->
+
+    <section class="hobbies" id="hobbies">
+
+        <h2 class="heading">My Interests</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>✈ Travelling</h3>
+
+                <p>
+                    I love travelling and exploring
+                    new destinations.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚽ Football</h3>
+
+                <p>
+                    Football is one of my favourite sports.
+                    I enjoy playing football with my friends.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Technology</h3>
+
+                <p>
+                    Interested in learning new technologies
+                    and exploring the world of electronics.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Thank You!</h2>
+
+        <p>Thanks for visiting my personal portfolio.</p>
+
+        <p style="margin-top:20px;color:#c6a77b;">
+
+            "Dream Big. Explore More. Keep Growing."
+
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 SARVES S. | Personal Portfolio
+
+    </footer>
+
+</body>
+</html>
+```
